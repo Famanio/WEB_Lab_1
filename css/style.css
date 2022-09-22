@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap');
+
+/* Global */
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #ffffff;
+    font: normal 16px 'Playfair Display', sans-serif;
+    margin: 0px;
+}
+h1, .inf-text {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h1 {
+    font-size: 28px;
+}
+
+/* Header */
+header {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    background-color:#f7f7f7;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;   
+}
+.header-img img{
+    width: 70px;
+    margin: 10px;
+}
+.nav-bar{
+    margin: auto 20px auto 10px;
+    font-size: 28px;
+}
+.selected-item {
+    font-size: 32px;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(0, 0, 255);
+    cursor: pointer;
+}
+a:active {
+    color: rgb(136, 136, 136);
+}
+
+/* Gallery */
+.gallery {
+    margin: 0px 10px 10px 10px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .item {
+    flex: calc(100%/2 - 50px);
+    margin: 20px;
+  }
+  .item-box {
+    width: 100%;
+    text-align: center;
+  }
+  .item-box img {
+    width: 100%;
+  }
+
+  /* Events */
+  .last-events {
+    margin: 0px 10px;
+  }
+  .last-events > table > tbody > tr > td:first-child > img {
+    width: 500px;
+  }
+  .last-events > table > tbody > tr > td > p{
+    text-align: left;
+  }
+
+  /* Content */
+  .wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    flex: 1 1 auto;
+  }
+
+/* History table */
+table{
+    border-collapse: collapse;
+    margin: 10px 10px 20px 10px;
+    border: 2px solid black;
+}
+th,td {
+    border: 1px solid black;
+}
+th {
+    font-size: 20px;
+    text-align: center;
+    background: rgb(204, 204, 204);
+    padding: 5px;
+}
+td {
+    padding: 10px 20px;
+    text-align: left;
+}
+tr:nth-child(even) {
+    background-color: rgb(229, 229, 229);
+}
+
+/* Infrastructure */
+iframe {
+    width: 600px;
+    height: 450px;
+    margin-left: 10px;
+}
+.geography {
+    display: flex;
+}
+.geo-info {
+    margin: 0px 10px 0px 10px;
+}
+.geo-info > article > h2{
+    margin: 0px;
+}
+.transport {
+    margin: 0px 10px;
+}
+.transport > table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.transport > table > tbody > tr > td:first-child::after{
+    content: '⌚';
+}
+.transport > table > tbody > tr > td:first-child, td:last-child{
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Culture */
+.culture-info {
+    margin: 10px 10px 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(229, 229, 229);
+    box-sizing: border-box;
+}
+.culture-img img {
+    width: 600px;
+    height: 100%;
+}
+.culture-text {
+    margin: 0px 10px 10px 40px;
+}
+.culture-text-right {
+    margin: 0px 40px 10px 10px;
+}
+/* Feedback */
+.contact {
+    margin: 0px 10px;
+}
+.form-group label {
+    display: block;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid rgb(204, 204, 204);
+    color: black;
+    padding: 10px 0px 10px;
+    outline: none;
+}
+input:required{
+    border-bottom: 2px solid tomato;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+    background-color: rgb(229, 229, 229);
+}
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+.row > .form-group {
+    width: 50%;
+}
+.row > .form-group:first-child {
+    margin-right: 20px;
+}
+.sub-btn {
+    background: rgb(229, 229, 229);;
+    padding: 15px 75px;
+    margin: 15px 0px;
+    border: none;
+    cursor: pointer;
+}
+.sub-btn:hover {
+    opacity: 0.7;
+}
+
+/* Footer */
+footer {
+    padding: 30px;
+    background-color: rgb(15, 14, 14);
+    box-shadow:0px -4px 12px 2px rgba(0,0,0,0.25);
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between; 
+}
+footer p, footer li, footer a{
+    color: #ffffff;
+    text-align: left;
+    font-size: 18px;
+}
+footer a:visited{
+    color: rgb(200, 200, 200);
+}
+footer li{
+  list-style-type: '\2615'; 
+}
